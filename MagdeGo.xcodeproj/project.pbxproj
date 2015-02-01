@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AF71D921A7EDCD10079D17C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF71D911A7EDCD10079D17C /* main.m */; };
+		1AF71D951A7EDCD10079D17C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF71D941A7EDCD10079D17C /* AppDelegate.m */; };
+		1AF71D981A7EDCD10079D17C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF71D971A7EDCD10079D17C /* ViewController.m */; };
+		1AF71D9B1A7EDCD10079D17C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AF71D991A7EDCD10079D17C /* Main.storyboard */; };
+		1AF71D9D1A7EDCD10079D17C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AF71D9C1A7EDCD10079D17C /* Images.xcassets */; };
+		1AF71DA01A7EDCD10079D17C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF71D9E1A7EDCD10079D17C /* LaunchScreen.xib */; };
+		1AF71DAC1A7EDCD10079D17C /* MagdeGoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF71DAB1A7EDCD10079D17C /* MagdeGoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AF71DA61A7EDCD10079D17C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AF71D841A7EDCD10079D17C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AF71D8B1A7EDCD10079D17C;
+			remoteInfo = MagdeGo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AF71D8C1A7EDCD10079D17C /* MagdeGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagdeGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AF71D901A7EDCD10079D17C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AF71D911A7EDCD10079D17C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1AF71D931A7EDCD10079D17C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1AF71D941A7EDCD10079D17C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1AF71D961A7EDCD10079D17C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1AF71D971A7EDCD10079D17C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1AF71D9A1A7EDCD10079D17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1AF71D9C1A7EDCD10079D17C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1AF71D9F1A7EDCD10079D17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1AF71DA51A7EDCD10079D17C /* MagdeGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagdeGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AF71DAA1A7EDCD10079D17C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AF71DAB1A7EDCD10079D17C /* MagdeGoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagdeGoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AF71D891A7EDCD10079D17C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AF71DA21A7EDCD10079D17C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AF71D831A7EDCD10079D17C = {
+			isa = PBXGroup;
+			children = (
+				1AF71D8E1A7EDCD10079D17C /* MagdeGo */,
+				1AF71DA81A7EDCD10079D17C /* MagdeGoTests */,
+				1AF71D8D1A7EDCD10079D17C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1AF71D8D1A7EDCD10079D17C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AF71D8C1A7EDCD10079D17C /* MagdeGo.app */,
+				1AF71DA51A7EDCD10079D17C /* MagdeGoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AF71D8E1A7EDCD10079D17C /* MagdeGo */ = {
+			isa = PBXGroup;
+			children = (
+				1AF71D931A7EDCD10079D17C /* AppDelegate.h */,
+				1AF71D941A7EDCD10079D17C /* AppDelegate.m */,
+				1AF71D961A7EDCD10079D17C /* ViewController.h */,
+				1AF71D971A7EDCD10079D17C /* ViewController.m */,
+				1AF71D991A7EDCD10079D17C /* Main.storyboard */,
+				1AF71D9C1A7EDCD10079D17C /* Images.xcassets */,
+				1AF71D9E1A7EDCD10079D17C /* LaunchScreen.xib */,
+				1AF71D8F1A7EDCD10079D17C /* Supporting Files */,
+			);
+			path = MagdeGo;
+			sourceTree = "<group>";
+		};
+		1AF71D8F1A7EDCD10079D17C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AF71D901A7EDCD10079D17C /* Info.plist */,
+				1AF71D911A7EDCD10079D17C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AF71DA81A7EDCD10079D17C /* MagdeGoTests */ = {
+			isa = PBXGroup;
+			children = (
+				1AF71DAB1A7EDCD10079D17C /* MagdeGoTests.m */,
+				1AF71DA91A7EDCD10079D17C /* Supporting Files */,
+			);
+			path = MagdeGoTests;
+			sourceTree = "<group>";
+		};
+		1AF71DA91A7EDCD10079D17C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AF71DAA1A7EDCD10079D17C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AF71D8B1A7EDCD10079D17C /* MagdeGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AF71DAF1A7EDCD10079D17C /* Build configuration list for PBXNativeTarget "MagdeGo" */;
+			buildPhases = (
+				1AF71D881A7EDCD10079D17C /* Sources */,
+				1AF71D891A7EDCD10079D17C /* Frameworks */,
+				1AF71D8A1A7EDCD10079D17C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagdeGo;
+			productName = MagdeGo;
+			productReference = 1AF71D8C1A7EDCD10079D17C /* MagdeGo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AF71DA41A7EDCD10079D17C /* MagdeGoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AF71DB21A7EDCD10079D17C /* Build configuration list for PBXNativeTarget "MagdeGoTests" */;
+			buildPhases = (
+				1AF71DA11A7EDCD10079D17C /* Sources */,
+				1AF71DA21A7EDCD10079D17C /* Frameworks */,
+				1AF71DA31A7EDCD10079D17C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AF71DA71A7EDCD10079D17C /* PBXTargetDependency */,
+			);
+			name = MagdeGoTests;
+			productName = MagdeGoTests;
+			productReference = 1AF71DA51A7EDCD10079D17C /* MagdeGoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AF71D841A7EDCD10079D17C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Rosario Raulin";
+				TargetAttributes = {
+					1AF71D8B1A7EDCD10079D17C = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					1AF71DA41A7EDCD10079D17C = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 1AF71D8B1A7EDCD10079D17C;
+					};
+				};
+			};
+			buildConfigurationList = 1AF71D871A7EDCD10079D17C /* Build configuration list for PBXProject "MagdeGo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1AF71D831A7EDCD10079D17C;
+			productRefGroup = 1AF71D8D1A7EDCD10079D17C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AF71D8B1A7EDCD10079D17C /* MagdeGo */,
+				1AF71DA41A7EDCD10079D17C /* MagdeGoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AF71D8A1A7EDCD10079D17C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF71D9B1A7EDCD10079D17C /* Main.storyboard in Resources */,
+				1AF71DA01A7EDCD10079D17C /* LaunchScreen.xib in Resources */,
+				1AF71D9D1A7EDCD10079D17C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AF71DA31A7EDCD10079D17C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AF71D881A7EDCD10079D17C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF71D981A7EDCD10079D17C /* ViewController.m in Sources */,
+				1AF71D951A7EDCD10079D17C /* AppDelegate.m in Sources */,
+				1AF71D921A7EDCD10079D17C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AF71DA11A7EDCD10079D17C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF71DAC1A7EDCD10079D17C /* MagdeGoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AF71DA71A7EDCD10079D17C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AF71D8B1A7EDCD10079D17C /* MagdeGo */;
+			targetProxy = 1AF71DA61A7EDCD10079D17C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1AF71D991A7EDCD10079D17C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AF71D9A1A7EDCD10079D17C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1AF71D9E1A7EDCD10079D17C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AF71D9F1A7EDCD10079D17C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1AF71DAD1A7EDCD10079D17C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AF71DAE1A7EDCD10079D17C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AF71DB01A7EDCD10079D17C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MagdeGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1AF71DB11A7EDCD10079D17C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MagdeGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1AF71DB31A7EDCD10079D17C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MagdeGoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagdeGo.app/MagdeGo";
+			};
+			name = Debug;
+		};
+		1AF71DB41A7EDCD10079D17C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MagdeGoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagdeGo.app/MagdeGo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AF71D871A7EDCD10079D17C /* Build configuration list for PBXProject "MagdeGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AF71DAD1A7EDCD10079D17C /* Debug */,
+				1AF71DAE1A7EDCD10079D17C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AF71DAF1A7EDCD10079D17C /* Build configuration list for PBXNativeTarget "MagdeGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AF71DB01A7EDCD10079D17C /* Debug */,
+				1AF71DB11A7EDCD10079D17C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1AF71DB21A7EDCD10079D17C /* Build configuration list for PBXNativeTarget "MagdeGoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AF71DB31A7EDCD10079D17C /* Debug */,
+				1AF71DB41A7EDCD10079D17C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AF71D841A7EDCD10079D17C /* Project object */;
+}
