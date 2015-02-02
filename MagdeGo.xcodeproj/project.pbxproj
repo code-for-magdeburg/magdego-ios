@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A246B351A7EEA1B00D49258 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AF71DD31A7EE0020079D17C /* Main.storyboard */; };
+		1A246B361A7EEA1B00D49258 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AF71DE31A7EE1DD0079D17C /* Localizable.strings */; };
+		1A246B371A7EEA3100D49258 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF71DD61A7EE0110079D17C /* LaunchScreen.xib */; };
 		1AF71D921A7EDCD10079D17C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF71D911A7EDCD10079D17C /* main.m */; };
-		1AF71D951A7EDCD10079D17C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF71D941A7EDCD10079D17C /* AppDelegate.m */; };
-		1AF71D981A7EDCD10079D17C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF71D971A7EDCD10079D17C /* ViewController.m */; };
-		1AF71D9B1A7EDCD10079D17C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AF71D991A7EDCD10079D17C /* Main.storyboard */; };
 		1AF71D9D1A7EDCD10079D17C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AF71D9C1A7EDCD10079D17C /* Images.xcassets */; };
-		1AF71DA01A7EDCD10079D17C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF71D9E1A7EDCD10079D17C /* LaunchScreen.xib */; };
 		1AF71DAC1A7EDCD10079D17C /* MagdeGoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF71DAB1A7EDCD10079D17C /* MagdeGoTests.m */; };
+		1AF71DBA1A7EDD010079D17C /* MagdeGoLogoTableView.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AF71DB71A7EDD010079D17C /* MagdeGoLogoTableView.png */; };
+		1AF71DBB1A7EDD010079D17C /* MagdeGoLogoTableView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AF71DB81A7EDD010079D17C /* MagdeGoLogoTableView@2x.png */; };
+		1AF71DBC1A7EDD010079D17C /* MagdeGoLogoTableView@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AF71DB91A7EDD010079D17C /* MagdeGoLogoTableView@3x.png */; };
+		1AF71DC91A7EDD390079D17C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF71DBE1A7EDD390079D17C /* AppDelegate.m */; };
+		1AF71DCA1A7EDD390079D17C /* DepartureInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF71DC01A7EDD390079D17C /* DepartureInformation.m */; };
+		1AF71DCB1A7EDD390079D17C /* DepartureInformationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF71DC21A7EDD390079D17C /* DepartureInformationManager.m */; };
+		1AF71DCC1A7EDD390079D17C /* DepartureInformationTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF71DC41A7EDD390079D17C /* DepartureInformationTVC.m */; };
+		1AF71DCD1A7EDD390079D17C /* DepartureTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF71DC61A7EDD390079D17C /* DepartureTime.m */; };
+		1AF71DCE1A7EDD390079D17C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF71DC81A7EDD390079D17C /* ViewController.m */; };
+		1AF71DD91A7EE0720079D17C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AF71DDB1A7EE0720079D17C /* InfoPlist.strings */; };
+		1AF71DE61A7EE1DD0079D17C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AF71DE81A7EE1DD0079D17C /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +37,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A246B391A7EEA5800D49258 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		1A246B3A1A7EEA6500D49258 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1A246B3B1A7EEA6700D49258 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1A76E0851A7EE51A009580E6 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		1A76E0861A7EE583009580E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A76E0881A7EE58C009580E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		1AF71D8C1A7EDCD10079D17C /* MagdeGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagdeGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF71D901A7EDCD10079D17C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AF71D911A7EDCD10079D17C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1AF71D931A7EDCD10079D17C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1AF71D941A7EDCD10079D17C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1AF71D961A7EDCD10079D17C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1AF71D971A7EDCD10079D17C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1AF71D9A1A7EDCD10079D17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1AF71D9C1A7EDCD10079D17C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1AF71D9F1A7EDCD10079D17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1AF71DA51A7EDCD10079D17C /* MagdeGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagdeGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF71DAA1A7EDCD10079D17C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AF71DAB1A7EDCD10079D17C /* MagdeGoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagdeGoTests.m; sourceTree = "<group>"; };
+		1AF71DB71A7EDD010079D17C /* MagdeGoLogoTableView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MagdeGoLogoTableView.png; sourceTree = "<group>"; };
+		1AF71DB81A7EDD010079D17C /* MagdeGoLogoTableView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MagdeGoLogoTableView@2x.png"; sourceTree = "<group>"; };
+		1AF71DB91A7EDD010079D17C /* MagdeGoLogoTableView@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MagdeGoLogoTableView@3x.png"; sourceTree = "<group>"; };
+		1AF71DBD1A7EDD390079D17C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1AF71DBE1A7EDD390079D17C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1AF71DBF1A7EDD390079D17C /* DepartureInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepartureInformation.h; sourceTree = "<group>"; };
+		1AF71DC01A7EDD390079D17C /* DepartureInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartureInformation.m; sourceTree = "<group>"; };
+		1AF71DC11A7EDD390079D17C /* DepartureInformationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepartureInformationManager.h; sourceTree = "<group>"; };
+		1AF71DC21A7EDD390079D17C /* DepartureInformationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartureInformationManager.m; sourceTree = "<group>"; };
+		1AF71DC31A7EDD390079D17C /* DepartureInformationTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepartureInformationTVC.h; sourceTree = "<group>"; };
+		1AF71DC41A7EDD390079D17C /* DepartureInformationTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartureInformationTVC.m; sourceTree = "<group>"; };
+		1AF71DC51A7EDD390079D17C /* DepartureTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepartureTime.h; sourceTree = "<group>"; };
+		1AF71DC61A7EDD390079D17C /* DepartureTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartureTime.m; sourceTree = "<group>"; };
+		1AF71DC71A7EDD390079D17C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1AF71DC81A7EDD390079D17C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1AF71DD21A7EE0020079D17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1AF71DD51A7EE0110079D17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1AF71DDA1A7EE0720079D17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1AF71DDC1A7EE07C0079D17C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		1AF71DDE1A7EE07C0079D17C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1AF71DE21A7EE1DD0079D17C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1AF71DE71A7EE1DD0079D17C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +113,24 @@
 		1AF71D8E1A7EDCD10079D17C /* MagdeGo */ = {
 			isa = PBXGroup;
 			children = (
-				1AF71D931A7EDCD10079D17C /* AppDelegate.h */,
-				1AF71D941A7EDCD10079D17C /* AppDelegate.m */,
-				1AF71D961A7EDCD10079D17C /* ViewController.h */,
-				1AF71D971A7EDCD10079D17C /* ViewController.m */,
-				1AF71D991A7EDCD10079D17C /* Main.storyboard */,
+				1AF71DBD1A7EDD390079D17C /* AppDelegate.h */,
+				1AF71DBE1A7EDD390079D17C /* AppDelegate.m */,
+				1AF71DBF1A7EDD390079D17C /* DepartureInformation.h */,
+				1AF71DC01A7EDD390079D17C /* DepartureInformation.m */,
+				1AF71DC11A7EDD390079D17C /* DepartureInformationManager.h */,
+				1AF71DC21A7EDD390079D17C /* DepartureInformationManager.m */,
+				1AF71DC31A7EDD390079D17C /* DepartureInformationTVC.h */,
+				1AF71DC41A7EDD390079D17C /* DepartureInformationTVC.m */,
+				1AF71DC51A7EDD390079D17C /* DepartureTime.h */,
+				1AF71DC61A7EDD390079D17C /* DepartureTime.m */,
+				1AF71DC71A7EDD390079D17C /* ViewController.h */,
+				1AF71DC81A7EDD390079D17C /* ViewController.m */,
+				1AF71DB71A7EDD010079D17C /* MagdeGoLogoTableView.png */,
+				1AF71DB81A7EDD010079D17C /* MagdeGoLogoTableView@2x.png */,
+				1AF71DB91A7EDD010079D17C /* MagdeGoLogoTableView@3x.png */,
+				1AF71DD31A7EE0020079D17C /* Main.storyboard */,
 				1AF71D9C1A7EDCD10079D17C /* Images.xcassets */,
-				1AF71D9E1A7EDCD10079D17C /* LaunchScreen.xib */,
+				1AF71DD61A7EE0110079D17C /* LaunchScreen.xib */,
 				1AF71D8F1A7EDCD10079D17C /* Supporting Files */,
 			);
 			path = MagdeGo;
@@ -96,8 +139,10 @@
 		1AF71D8F1A7EDCD10079D17C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1AF71DE31A7EE1DD0079D17C /* Localizable.strings */,
 				1AF71D901A7EDCD10079D17C /* Info.plist */,
 				1AF71D911A7EDCD10079D17C /* main.m */,
+				1AF71DDB1A7EE0720079D17C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -114,6 +159,7 @@
 		1AF71DA91A7EDCD10079D17C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1AF71DE81A7EE1DD0079D17C /* InfoPlist.strings */,
 				1AF71DAA1A7EDCD10079D17C /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -168,6 +214,7 @@
 				TargetAttributes = {
 					1AF71D8B1A7EDCD10079D17C = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = XPNHR27RXJ;
 					};
 					1AF71DA41A7EDCD10079D17C = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -182,6 +229,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 1AF71D831A7EDCD10079D17C;
 			productRefGroup = 1AF71D8D1A7EDCD10079D17C /* Products */;
@@ -199,9 +247,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AF71D9B1A7EDCD10079D17C /* Main.storyboard in Resources */,
-				1AF71DA01A7EDCD10079D17C /* LaunchScreen.xib in Resources */,
+				1A246B371A7EEA3100D49258 /* LaunchScreen.xib in Resources */,
+				1A246B351A7EEA1B00D49258 /* Main.storyboard in Resources */,
+				1A246B361A7EEA1B00D49258 /* Localizable.strings in Resources */,
+				1AF71DBB1A7EDD010079D17C /* MagdeGoLogoTableView@2x.png in Resources */,
+				1AF71DD91A7EE0720079D17C /* InfoPlist.strings in Resources */,
+				1AF71DBC1A7EDD010079D17C /* MagdeGoLogoTableView@3x.png in Resources */,
 				1AF71D9D1A7EDCD10079D17C /* Images.xcassets in Resources */,
+				1AF71DBA1A7EDD010079D17C /* MagdeGoLogoTableView.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AF71DE61A7EE1DD0079D17C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +273,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AF71D981A7EDCD10079D17C /* ViewController.m in Sources */,
-				1AF71D951A7EDCD10079D17C /* AppDelegate.m in Sources */,
+				1AF71DCE1A7EDD390079D17C /* ViewController.m in Sources */,
+				1AF71DC91A7EDD390079D17C /* AppDelegate.m in Sources */,
+				1AF71DCC1A7EDD390079D17C /* DepartureInformationTVC.m in Sources */,
+				1AF71DCB1A7EDD390079D17C /* DepartureInformationManager.m in Sources */,
+				1AF71DCD1A7EDD390079D17C /* DepartureTime.m in Sources */,
+				1AF71DCA1A7EDD390079D17C /* DepartureInformation.m in Sources */,
 				1AF71D921A7EDCD10079D17C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,20 +302,52 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1AF71D991A7EDCD10079D17C /* Main.storyboard */ = {
+		1AF71DD31A7EE0020079D17C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1AF71D9A1A7EDCD10079D17C /* Base */,
+				1AF71DD21A7EE0020079D17C /* Base */,
+				1AF71DDC1A7EE07C0079D17C /* de */,
+				1A246B391A7EEA5800D49258 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		1AF71D9E1A7EDCD10079D17C /* LaunchScreen.xib */ = {
+		1AF71DD61A7EE0110079D17C /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1AF71D9F1A7EDCD10079D17C /* Base */,
+				1AF71DD51A7EE0110079D17C /* Base */,
+				1A76E0851A7EE51A009580E6 /* de */,
+				1A76E0881A7EE58C009580E6 /* en */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		1AF71DDB1A7EE0720079D17C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AF71DDA1A7EE0720079D17C /* Base */,
+				1AF71DDE1A7EE07C0079D17C /* de */,
+				1A76E0861A7EE583009580E6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1AF71DE31A7EE1DD0079D17C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AF71DE21A7EE1DD0079D17C /* de */,
+				1A246B3A1A7EEA6500D49258 /* en */,
+				1A246B3B1A7EEA6700D49258 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		1AF71DE81A7EE1DD0079D17C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AF71DE71A7EE1DD0079D17C /* de */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -345,9 +435,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Johannes Filter (XPNHR27RXJ)";
 				INFOPLIST_FILE = MagdeGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f45d2257-56e1-4a80-82b6-33f3e5574566";
 			};
 			name = Debug;
 		};
@@ -355,9 +447,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Johannes Filter (XPNHR27RXJ)";
 				INFOPLIST_FILE = MagdeGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f45d2257-56e1-4a80-82b6-33f3e5574566";
 			};
 			name = Release;
 		};
@@ -414,6 +508,7 @@
 				1AF71DB11A7EDCD10079D17C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AF71DB21A7EDCD10079D17C /* Build configuration list for PBXNativeTarget "MagdeGoTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +517,7 @@
 				1AF71DB41A7EDCD10079D17C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

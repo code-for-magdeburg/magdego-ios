@@ -1,0 +1,23 @@
+/* Cancel */
+"Cancel" = "Cancel";
+
+/* No comment provided by engineer. */
+"Couldn't get any stations nearby. This app works in Saxony-Anhalt and Leipzig only. Use demo location?" = "Couldn't get any stations nearby. This app works in Saxony-Anhalt and Leipzig only. Use demo location?";
+
+/* No Results */
+"No Results" = "No Results";
+
+/* No location alert title */
+"No location permission" = "No location permission";
+
+/* Now */
+"Now" = "Now";
+
+/* Ask user to enable location service for this app. */
+"Sorry, we need your location to show stations nearby. Please enable location service in settings. Using demo location for now." = "Sorry, we need your location to show stations nearby. Please enable location service in settings. Using demo location for now.";
+
+/* Use Demo */
+"Use Demo" = "Use Demo";
+
+/* remaining time in minutes format string */
+"in %lu min" = "%lu min";

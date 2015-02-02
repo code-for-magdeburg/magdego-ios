@@ -1,0 +1,24 @@
+/* Cancel */
+"Cancel" = "Abbrechen";
+
+/* No comment provided by engineer. */
+"Couldn't get any stations nearby. This app works in Saxony-Anhalt and Leipzig only. Use demo location?" = "Konnte keine Stationen in der Nähe finden. Diese App funktioniert nur in Sachsen-Anhalt und Leipzig. Beispielort verwenden?";
+
+/* No Results */
+"No Results" = "Keine Ergebnisse";
+
+/* No location alert title */
+"No location permission" = "Kein Standortzugriff";
+
+/* Now */
+"Now" = "Jetzt";
+
+/* Ask user to enable location service for this app. */
+"Sorry, we need your location to show stations nearby. Please enable location service in settings. Using demo location for now." = "Entschuldige, wir brauchen deinen Standort, um Stationen in der Nähe zu finden. Bitte aktiviere den Standortdienst in den Einstellungen!";
+
+/* Use Demo */
+"Use Demo" = "Beispielstandort verwenden";
+
+/* remaining time in minutes format string */
+"in %lu min" = "%lu Minuten";
+
