@@ -44,16 +44,12 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"Fnord" forIndexPath:indexPath];
-    
     if (indexPath.row < 0 || indexPath.row >= [self.departureInformation.departureTimes count]) {
         return nil;
     }
     
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Fnord"];
-    }
-    
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"Fnord" forIndexPath:indexPath];
+
     UILabel* timeLabel = (UILabel*)[cell viewWithTag:1];
     UILabel* directionLabel = (UILabel*)[cell viewWithTag:2];
     UILabel* lineLabel = (UILabel*)[cell viewWithTag:3];
