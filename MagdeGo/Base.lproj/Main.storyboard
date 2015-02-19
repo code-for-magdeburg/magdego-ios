@@ -52,23 +52,23 @@
                             <rect key="frame" x="0.0" y="0.0" width="600" height="230"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MagdeGoLogoTableView.png" translatesAutoresizingMaskIntoConstraints="NO" id="IlZ-zu-5pp">
-                                    <rect key="frame" x="250" y="5" width="100" height="100"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MagdeGoLogoTableView_80_80.png" translatesAutoresizingMaskIntoConstraints="NO" id="IlZ-zu-5pp">
+                                    <rect key="frame" x="260" y="15" width="80" height="80"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="100" id="WdH-gL-kdm"/>
-                                        <constraint firstAttribute="width" constant="100" id="nRg-Vg-5P6"/>
+                                        <constraint firstAttribute="height" constant="80" id="WdH-gL-kdm"/>
+                                        <constraint firstAttribute="width" constant="80" id="nRg-Vg-5P6"/>
                                     </constraints>
                                 </imageView>
                                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i7n-ta-LWm" userLabel="CenterStationNameDummy">
-                                    <rect key="frame" x="0.0" y="102" width="10" height="98"/>
+                                    <rect key="frame" x="0.0" y="95" width="10" height="105"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="10" id="eOf-IL-P4a"/>
                                     </constraints>
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Station name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLq-4u-Buh">
-                                    <rect key="frame" x="228" y="136" width="143" height="31"/>
-                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="26"/>
+                                    <rect key="frame" x="225" y="132" width="149" height="31"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
                                     <color key="textColor" red="0.14901960784313725" green="0.69411764705882351" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -110,14 +110,14 @@
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="centerX" secondItem="fLq-4u-Buh" secondAttribute="centerX" constant="1" id="2Qf-uy-pp8"/>
+                                <constraint firstAttribute="centerX" secondItem="fLq-4u-Buh" secondAttribute="centerX" id="2Qf-uy-pp8"/>
                                 <constraint firstAttribute="bottom" secondItem="hY3-Ix-kZD" secondAttribute="bottom" id="FhI-pq-C0l"/>
                                 <constraint firstAttribute="trailing" secondItem="hY3-Ix-kZD" secondAttribute="trailing" id="Lja-u5-e9i"/>
-                                <constraint firstItem="IlZ-zu-5pp" firstAttribute="top" secondItem="ZTS-fs-wAP" secondAttribute="top" constant="5" id="N23-2A-JyC"/>
+                                <constraint firstItem="IlZ-zu-5pp" firstAttribute="top" secondItem="ZTS-fs-wAP" secondAttribute="top" constant="15" id="N23-2A-JyC"/>
                                 <constraint firstItem="fLq-4u-Buh" firstAttribute="centerY" secondItem="i7n-ta-LWm" secondAttribute="centerY" id="QWx-9Y-7ad"/>
                                 <constraint firstItem="hY3-Ix-kZD" firstAttribute="top" secondItem="i7n-ta-LWm" secondAttribute="bottom" id="b3W-D9-u2M"/>
                                 <constraint firstItem="i7n-ta-LWm" firstAttribute="leading" secondItem="ZTS-fs-wAP" secondAttribute="leading" id="jnG-wS-V5Z"/>
-                                <constraint firstItem="IlZ-zu-5pp" firstAttribute="top" secondItem="i7n-ta-LWm" secondAttribute="top" constant="-97" id="lMg-pA-pbx"/>
+                                <constraint firstItem="IlZ-zu-5pp" firstAttribute="top" secondItem="i7n-ta-LWm" secondAttribute="top" constant="-80" id="lMg-pA-pbx"/>
                                 <constraint firstItem="hY3-Ix-kZD" firstAttribute="leading" secondItem="ZTS-fs-wAP" secondAttribute="leading" id="mZI-Nd-72f"/>
                                 <constraint firstAttribute="centerX" secondItem="IlZ-zu-5pp" secondAttribute="centerX" id="z8b-qc-L2O"/>
                             </constraints>
@@ -129,20 +129,20 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pA4-qc-88q">
-                                            <rect key="frame" x="8" y="11" width="35" height="21"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                            <rect key="frame" x="8" y="12" width="36" height="21"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                             <color key="textColor" red="0.25882352941176473" green="0.25882352941176473" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Station name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDO-lR-1xH">
-                                            <rect key="frame" x="48" y="11" width="503" height="21"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                            <rect key="frame" x="49" y="12" width="501" height="21"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                             <color key="textColor" red="0.25882352941176473" green="0.25882352941176473" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nca-uV-ndz">
-                                            <rect key="frame" x="556" y="11" width="36" height="21"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                            <rect key="frame" x="555" y="12" width="37" height="21"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                             <color key="textColor" red="0.25882352941176473" green="0.25882352941176473" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -175,6 +175,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="MagdeGoLogoTableView.png" width="100" height="100"/>
+        <image name="MagdeGoLogoTableView_80_80.png" width="80" height="80"/>
     </resources>
 </document>

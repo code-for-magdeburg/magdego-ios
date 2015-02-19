@@ -10,12 +10,12 @@
 		1A246B351A7EEA1B00D49258 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AF71DD31A7EE0020079D17C /* Main.storyboard */; };
 		1A246B361A7EEA1B00D49258 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AF71DE31A7EE1DD0079D17C /* Localizable.strings */; };
 		1A246B371A7EEA3100D49258 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF71DD61A7EE0110079D17C /* LaunchScreen.xib */; };
+		1ADEDE611A968988000611A7 /* MagdeGoLogoTableView_80_80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ADEDE5E1A968988000611A7 /* MagdeGoLogoTableView_80_80@2x.png */; };
+		1ADEDE621A968988000611A7 /* MagdeGoLogoTableView_80_80@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ADEDE5F1A968988000611A7 /* MagdeGoLogoTableView_80_80@3x.png */; };
+		1ADEDE631A968988000611A7 /* MagdeGoLogoTableView_80_80.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ADEDE601A968988000611A7 /* MagdeGoLogoTableView_80_80.png */; };
 		1AF71D921A7EDCD10079D17C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF71D911A7EDCD10079D17C /* main.m */; };
 		1AF71D9D1A7EDCD10079D17C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AF71D9C1A7EDCD10079D17C /* Images.xcassets */; };
 		1AF71DAC1A7EDCD10079D17C /* MagdeGoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF71DAB1A7EDCD10079D17C /* MagdeGoTests.m */; };
-		1AF71DBA1A7EDD010079D17C /* MagdeGoLogoTableView.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AF71DB71A7EDD010079D17C /* MagdeGoLogoTableView.png */; };
-		1AF71DBB1A7EDD010079D17C /* MagdeGoLogoTableView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AF71DB81A7EDD010079D17C /* MagdeGoLogoTableView@2x.png */; };
-		1AF71DBC1A7EDD010079D17C /* MagdeGoLogoTableView@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AF71DB91A7EDD010079D17C /* MagdeGoLogoTableView@3x.png */; };
 		1AF71DC91A7EDD390079D17C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF71DBE1A7EDD390079D17C /* AppDelegate.m */; };
 		1AF71DCA1A7EDD390079D17C /* DepartureInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF71DC01A7EDD390079D17C /* DepartureInformation.m */; };
 		1AF71DCB1A7EDD390079D17C /* DepartureInformationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF71DC21A7EDD390079D17C /* DepartureInformationManager.m */; };
@@ -43,6 +43,9 @@
 		1A76E0851A7EE51A009580E6 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		1A76E0861A7EE583009580E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A76E0881A7EE58C009580E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		1ADEDE5E1A968988000611A7 /* MagdeGoLogoTableView_80_80@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MagdeGoLogoTableView_80_80@2x.png"; sourceTree = "<group>"; };
+		1ADEDE5F1A968988000611A7 /* MagdeGoLogoTableView_80_80@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MagdeGoLogoTableView_80_80@3x.png"; sourceTree = "<group>"; };
+		1ADEDE601A968988000611A7 /* MagdeGoLogoTableView_80_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MagdeGoLogoTableView_80_80.png; sourceTree = "<group>"; };
 		1AF71D8C1A7EDCD10079D17C /* MagdeGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagdeGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF71D901A7EDCD10079D17C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AF71D911A7EDCD10079D17C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,9 +53,6 @@
 		1AF71DA51A7EDCD10079D17C /* MagdeGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagdeGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF71DAA1A7EDCD10079D17C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AF71DAB1A7EDCD10079D17C /* MagdeGoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagdeGoTests.m; sourceTree = "<group>"; };
-		1AF71DB71A7EDD010079D17C /* MagdeGoLogoTableView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MagdeGoLogoTableView.png; sourceTree = "<group>"; };
-		1AF71DB81A7EDD010079D17C /* MagdeGoLogoTableView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MagdeGoLogoTableView@2x.png"; sourceTree = "<group>"; };
-		1AF71DB91A7EDD010079D17C /* MagdeGoLogoTableView@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MagdeGoLogoTableView@3x.png"; sourceTree = "<group>"; };
 		1AF71DBD1A7EDD390079D17C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1AF71DBE1A7EDD390079D17C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1AF71DBF1A7EDD390079D17C /* DepartureInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepartureInformation.h; sourceTree = "<group>"; };
@@ -125,9 +125,9 @@
 				1AF71DC61A7EDD390079D17C /* DepartureTime.m */,
 				1AF71DC71A7EDD390079D17C /* ViewController.h */,
 				1AF71DC81A7EDD390079D17C /* ViewController.m */,
-				1AF71DB71A7EDD010079D17C /* MagdeGoLogoTableView.png */,
-				1AF71DB81A7EDD010079D17C /* MagdeGoLogoTableView@2x.png */,
-				1AF71DB91A7EDD010079D17C /* MagdeGoLogoTableView@3x.png */,
+				1ADEDE5E1A968988000611A7 /* MagdeGoLogoTableView_80_80@2x.png */,
+				1ADEDE5F1A968988000611A7 /* MagdeGoLogoTableView_80_80@3x.png */,
+				1ADEDE601A968988000611A7 /* MagdeGoLogoTableView_80_80.png */,
 				1AF71DD31A7EE0020079D17C /* Main.storyboard */,
 				1AF71D9C1A7EDCD10079D17C /* Images.xcassets */,
 				1AF71DD61A7EE0110079D17C /* LaunchScreen.xib */,
@@ -248,13 +248,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A246B371A7EEA3100D49258 /* LaunchScreen.xib in Resources */,
+				1ADEDE631A968988000611A7 /* MagdeGoLogoTableView_80_80.png in Resources */,
 				1A246B351A7EEA1B00D49258 /* Main.storyboard in Resources */,
 				1A246B361A7EEA1B00D49258 /* Localizable.strings in Resources */,
-				1AF71DBB1A7EDD010079D17C /* MagdeGoLogoTableView@2x.png in Resources */,
+				1ADEDE621A968988000611A7 /* MagdeGoLogoTableView_80_80@3x.png in Resources */,
+				1ADEDE611A968988000611A7 /* MagdeGoLogoTableView_80_80@2x.png in Resources */,
 				1AF71DD91A7EE0720079D17C /* InfoPlist.strings in Resources */,
-				1AF71DBC1A7EDD010079D17C /* MagdeGoLogoTableView@3x.png in Resources */,
 				1AF71D9D1A7EDCD10079D17C /* Images.xcassets in Resources */,
-				1AF71DBA1A7EDD010079D17C /* MagdeGoLogoTableView.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
