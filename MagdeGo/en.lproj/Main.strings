@@ -3,7 +3,7 @@
 "Dxh-QL-Mmz.text" = "Time";
 
 /* Class = "IBUILabel"; text = "Station Name"; ObjectID = "JRH-WE-u1h"; */
-"JRH-WE-u1h.text" = "Station Name";
+"JRH-WE-u1h.text" = "Direction";
 
 /* Class = "IBUILabel"; text = "Station name"; ObjectID = "LDO-lR-1xH"; */
 "LDO-lR-1xH.text" = "Station name";
