@@ -8,10 +8,16 @@
 
 import CoreLocation
 
+@objc public enum DepManagerError : Int {
+    case NoLocationService
+    case NetworkError
+    case ParsingError
+}
+
 public class DepInfoManager : NSObject, CLLocationManagerDelegate {
     
     public var newInfoCallback : (NSArray) -> ()
-    public var errorCallback : (String) -> ()
+    public var errorCallback : (DepManagerError) -> ()
     
     lazy var locationManager : CLLocationManager = {
         let locationManager = CLLocationManager()
@@ -21,7 +27,7 @@ public class DepInfoManager : NSObject, CLLocationManagerDelegate {
         return locationManager
     }()
     
-    public init(newInfoCallback:(NSArray) ->(), errorCallback : (String) -> () = { println($0) }) {
+    public init(newInfoCallback:(NSArray) ->(), errorCallback : (DepManagerError) -> () = { $0 }) {
         self.newInfoCallback = newInfoCallback
         self.errorCallback = errorCallback
     }
@@ -43,13 +49,13 @@ public class DepInfoManager : NSObject, CLLocationManagerDelegate {
         
         let task = urlSession.dataTaskWithURL(apiURL!, completionHandler: { (data, resp, error) in
             if error != nil {
-                self.errorCallback("Error fetching new dep data")
+                self.errorCallback(.NetworkError)
             } else {
                 let depInfoOptional = DepartureInformation.newFromData(data)
                 if let depInfo = depInfoOptional {
                     self.newInfoCallback(depInfo)
                 } else {
-                    self.errorCallback("Error parsing API result")
+                    self.errorCallback(.ParsingError)
                 }
             }
         })
@@ -61,9 +67,7 @@ public class DepInfoManager : NSObject, CLLocationManagerDelegate {
         case .Denied:
             fallthrough
         case .Restricted:
-            errorCallback("Location usage denied")
-        case .NotDetermined:
-            errorCallback("Location status not determined yet")
+            errorCallback(.NoLocationService)
         default:
             break
         }

@@ -43,13 +43,23 @@
 
     self.departureInformationManager = [[DepInfoManager alloc] initWithNewInfoCallback:^(NSArray * __nonnull newDepartureInfo) {
         [self updateViewsForNewDepartureInformation:newDepartureInfo];
-    } errorCallback:^(NSString * __nonnull message) {
-        NSLog(@"error: %@", message);
+    } errorCallback:^(enum DepManagerError error) {
+        NSString* errorString;
+        
+        switch (error) {
+            case DepManagerErrorNetworkError:
+                errorString = @"Network error!";
+            case DepManagerErrorNoLocationService:
+                errorString = @"No Location service error!";
+                [self showNoLocationServiceError];
+            case DepManagerErrorParsingError:
+                errorString = @"Parsing error!";
+        }
+        
+        NSLog(@"error: %@", errorString);
     }];
-
-    [self.departureInformationManager requestDepartureTimesForLocation:nil];
     
-    NSLog(@"View loaded.");
+    [self.departureInformationManager requestDepartureTimesForLocation:nil];
 }
 
 - (void)setupTVCForNewDepartureInfo:(NSArray*)newDepartureInfo {
@@ -135,11 +145,11 @@
 - (void)resetScrollView {
     [self.scrollView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
 }
-//
-//- (void)showNoLocationServiceError {
-//    [self showErrorAlertWithTitle:NSLocalizedString(@"No location permission", @"No location alert title") message:NSLocalizedString(@"Sorry, we need your location to show stations nearby. Please enable location service in settings. Using demo location for now.", @"Ask user to enable location service for this app.")];
-//    [self.departureInformationManager requestDepartureTimesForLocation:[ViewController demoLocation]];
-//}
+
+- (void)showNoLocationServiceError {
+    [self showErrorAlertWithTitle:NSLocalizedString(@"No location permission", @"No location alert title") message:NSLocalizedString(@"Sorry, we need your location to show stations nearby. Please enable location service in settings. Using demo location for now.", @"Ask user to enable location service for this app.")];
+    [self.departureInformationManager requestDepartureTimesForLocation:[ViewController demoLocation]];
+}
 
 - (void)showErrorAlertWithTitle:(NSString*)title message:(NSString*)message {
     UIAlertController* alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
