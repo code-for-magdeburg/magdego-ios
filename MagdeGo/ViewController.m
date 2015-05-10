@@ -7,16 +7,18 @@
 //
 
 #import "ViewController.h"
-#import "DepartureInformationManager.h"
 #import "DepartureInformation.h"
 #import "DepartureInformationTVC.h"
+
+#import <CoreLocation/CoreLocation.h>
+
+@import MagdeKit;
 
 @interface ViewController ()
 
 @property (assign) NSUInteger currentPage;
 @property (strong) NSMutableArray* depInfoTVC;
-@property (strong) DepartureInformationManager* departureInformationManager;
-@property (strong) CLLocationManager* locationManager;
+@property (strong) DepInfoManager* departureInformationManager;
 
 @end
 
@@ -38,16 +40,14 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(triggerLocationUpdate) name:UIApplicationDidBecomeActiveNotification object:nil];
     
     // setup departure information observation
-    self.departureInformationManager = [[DepartureInformationManager alloc] init];
-    [self.departureInformationManager addObserver:self forKeyPath:@"departureInformation" options:NSKeyValueObservingOptionNew context:NULL];
-    
-    // setup location service
-    self.locationManager = [[CLLocationManager alloc] init];
-    self.locationManager.delegate = self;
-    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    
-    [self.locationManager requestWhenInUseAuthorization];
-    [self.locationManager startUpdatingLocation];
+
+    self.departureInformationManager = [[DepInfoManager alloc] initWithNewInfoCallback:^(NSArray * __nonnull newDepartureInfo) {
+        [self updateViewsForNewDepartureInformation:newDepartureInfo];
+    } errorCallback:^(NSString * __nonnull message) {
+        NSLog(@"error: %@", message);
+    }];
+
+    [self.departureInformationManager requestDepartureTimesForLocation:nil];
     
     NSLog(@"View loaded.");
 }
@@ -108,12 +108,7 @@
 }
 
 - (void)triggerLocationUpdate {
-    CLAuthorizationStatus authStatus = [CLLocationManager authorizationStatus];
-    if (authStatus == kCLAuthorizationStatusDenied || authStatus == kCLAuthorizationStatusRestricted) {
-        [self showNoLocationServiceError];
-    } else {
-        [self.locationManager startUpdatingLocation];
-    }
+    [self.departureInformationManager requestDepartureTimesForLocation:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -140,11 +135,11 @@
 - (void)resetScrollView {
     [self.scrollView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
 }
-
-- (void)showNoLocationServiceError {
-    [self showErrorAlertWithTitle:NSLocalizedString(@"No location permission", @"No location alert title") message:NSLocalizedString(@"Sorry, we need your location to show stations nearby. Please enable location service in settings. Using demo location for now.", @"Ask user to enable location service for this app.")];
-    [self.departureInformationManager updateForLocation:[ViewController demoLocation]];
-}
+//
+//- (void)showNoLocationServiceError {
+//    [self showErrorAlertWithTitle:NSLocalizedString(@"No location permission", @"No location alert title") message:NSLocalizedString(@"Sorry, we need your location to show stations nearby. Please enable location service in settings. Using demo location for now.", @"Ask user to enable location service for this app.")];
+//    [self.departureInformationManager requestDepartureTimesForLocation:[ViewController demoLocation]];
+//}
 
 - (void)showErrorAlertWithTitle:(NSString*)title message:(NSString*)message {
     UIAlertController* alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
@@ -155,55 +150,29 @@
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
-- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
-    switch (status) {
-        case kCLAuthorizationStatusAuthorizedAlways:
-        case kCLAuthorizationStatusAuthorizedWhenInUse:
-            break;
-        case kCLAuthorizationStatusNotDetermined:
-            break;
-        case kCLAuthorizationStatusRestricted:
-        case kCLAuthorizationStatusDenied:
-            [self showNoLocationServiceError];
-            break;
-    }
-}
-
-- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
-    NSLog(@"Location changed.");
-    
-    [manager stopUpdatingLocation];
-    CLLocation* currentLocation = [locations lastObject];
-    [self.departureInformationManager updateForLocation:currentLocation];
-}
-
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
-    if ([keyPath isEqual:@"departureInformation"]) {
-        NSArray* newDepInfo = [change objectForKey:NSKeyValueChangeNewKey];
+- (void)updateViewsForNewDepartureInformation:(NSArray*)newDepInfo {
+    if ([newDepInfo count] == 0) {
+        UIAlertController* alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"No Results", @"No Results") message:NSLocalizedString(@"Couldn't get any stations nearby. This app works in Saxony-Anhalt and Leipzig only. Use demo location?", @"") preferredStyle:UIAlertControllerStyleAlert];
         
-        if ([newDepInfo count] == 0) {
-            UIAlertController* alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"No Results", @"No Results") message:NSLocalizedString(@"Couldn't get any stations nearby. This app works in Saxony-Anhalt and Leipzig only. Use demo location?", @"") preferredStyle:UIAlertControllerStyleAlert];
-            
-            UIAlertAction* useDemo = [UIAlertAction actionWithTitle:NSLocalizedString(@"Use Demo", @"Use Demo") style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-                NSLog(@"Using demo location");
-                [self.departureInformationManager updateForLocation:[ViewController demoLocation]];
-                [alertController dismissViewControllerAnimated:YES completion:nil];
-            }];
-            
-            UIAlertAction* cancel = [UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", @"Cancel") style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-                [alertController dismissViewControllerAnimated:YES completion:nil];
-            }];
-            
-            [alertController addAction:useDemo];
-            [alertController addAction:cancel];
-            
-            [self presentViewController:alertController animated:YES completion:nil];
-        } else {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self removeOldTVC];
-                [self setupTVCForNewDepartureInfo:newDepInfo];
-            });
-        }
+        UIAlertAction* useDemo = [UIAlertAction actionWithTitle:NSLocalizedString(@"Use Demo", @"Use Demo") style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            NSLog(@"Using demo location");
+            [self.departureInformationManager requestDepartureTimesForLocation:[ViewController demoLocation]];
+            [alertController dismissViewControllerAnimated:YES completion:nil];
+        }];
+        
+        UIAlertAction* cancel = [UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", @"Cancel") style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            [alertController dismissViewControllerAnimated:YES completion:nil];
+        }];
+        
+        [alertController addAction:useDemo];
+        [alertController addAction:cancel];
+        
+        [self presentViewController:alertController animated:YES completion:nil];
+    } else {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self removeOldTVC];
+            [self setupTVCForNewDepartureInfo:newDepInfo];
+        });
     }
 }
 

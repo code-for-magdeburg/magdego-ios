@@ -9,9 +9,24 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>MagdeKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1AA0B7691AFFC62400CF9006</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1AA0B7731AFFC62400CF9006</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1AF71D8B1A7EDCD10079D17C</key>
 		<dict>
 			<key>primary</key>

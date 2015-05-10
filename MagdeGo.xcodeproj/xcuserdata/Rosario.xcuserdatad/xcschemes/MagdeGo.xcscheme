@@ -34,6 +34,20 @@
                ReferencedContainer = "container:MagdeGo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1AA0B7731AFFC62400CF9006"
+               BuildableName = "MagdeKitTests.xctest"
+               BlueprintName = "MagdeKitTests"
+               ReferencedContainer = "container:MagdeGo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -49,6 +63,16 @@
                BlueprintIdentifier = "1AF71DA41A7EDCD10079D17C"
                BuildableName = "MagdeGoTests.xctest"
                BlueprintName = "MagdeGoTests"
+               ReferencedContainer = "container:MagdeGo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1AA0B7731AFFC62400CF9006"
+               BuildableName = "MagdeKitTests.xctest"
+               BlueprintName = "MagdeKitTests"
                ReferencedContainer = "container:MagdeGo.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -74,7 +98,8 @@
       allowLocationSimulation = "YES"
       language = "de"
       region = "DE">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1AF71D8B1A7EDCD10079D17C"
@@ -92,7 +117,8 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1AF71D8B1A7EDCD10079D17C"
