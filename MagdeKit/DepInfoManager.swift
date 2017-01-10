@@ -9,16 +9,16 @@
 import CoreLocation
 
 @objc public enum DepManagerError : Int {
-    case NoLocationService
-    case NetworkError
-    case ParsingError
+    case noLocationService
+    case networkError
+    case parsingError
 }
 
 public class DepInfoManager : NSObject, CLLocationManagerDelegate {
     
-    public var newInfoCallback : (NSArray) -> ()
-    public var errorCallback : (DepManagerError) -> ()
-    
+    open var newInfoCallback : (NSArray) -> ()
+    open var errorCallback : (DepManagerError) -> ()
+
     lazy var locationManager : CLLocationManager = {
         let locationManager = CLLocationManager()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -26,55 +26,57 @@ public class DepInfoManager : NSObject, CLLocationManagerDelegate {
         locationManager.requestWhenInUseAuthorization()
         return locationManager
     }()
-    
-    public init(newInfoCallback:(NSArray) ->(), errorCallback : (DepManagerError) -> () = { $0 }) {
+
+    public init(newInfoCallback:@escaping (NSArray) ->(), errorCallback : @escaping (DepManagerError) -> ()) {
         self.newInfoCallback = newInfoCallback
         self.errorCallback = errorCallback
     }
     
-    public func requestDepartureTimes(forLocation : CLLocation? = nil) {
-        if var location = forLocation {
-            getDepartureTimes(location)
+    open func requestDepartureTimes(forLocation : CLLocation? = nil) {
+        if let location = forLocation {
+            getDepartureTimes(forLocation: location)
         } else {
             locationManager.startUpdatingLocation()
         }
     }
     
-    private func getDepartureTimes(forLocation : CLLocation) {
+    fileprivate func getDepartureTimes(forLocation : CLLocation) {
         let longitude = forLocation.coordinate.longitude
         let latitude = forLocation.coordinate.latitude
         let apiURLString = "http://api.magdego.de/departure-time/location/\(longitude)/\(latitude)"
-        let apiURL = NSURL(string: apiURLString)
-        let urlSession = NSURLSession.sharedSession()
+        let apiURL = URL(string: apiURLString)
+        let urlSession = URLSession.shared
         
-        let task = urlSession.dataTaskWithURL(apiURL!, completionHandler: { (data, resp, error) in
+        let task = urlSession.dataTask(with: apiURL!, completionHandler: { (data, resp, error) in
             if error != nil {
-                self.errorCallback(.NetworkError)
+                self.errorCallback(.networkError)
             } else {
-                let depInfoOptional = DepartureInformation.newFromData(data)
+                let depInfoOptional = DepartureInformation.new(from: data)
                 if let depInfo = depInfoOptional {
-                    self.newInfoCallback(depInfo)
+                    self.newInfoCallback(depInfo as NSArray)
                 } else {
-                    self.errorCallback(.ParsingError)
+                    self.errorCallback(.parsingError)
                 }
             }
         })
         task.resume()
     }
     
-    public func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+    public func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+
         switch status {
-        case .Denied:
+        case .denied:
             fallthrough
-        case .Restricted:
-            errorCallback(.NoLocationService)
+        case .restricted:
+            errorCallback(.noLocationService)
         default:
             break
         }
     }
     
-    public func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+    public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         locationManager.stopUpdatingLocation()
-        getDepartureTimes(locations.last as! CLLocation)
+        getDepartureTimes(forLocation: locations.last!)
     }
-}
+    
+    }
