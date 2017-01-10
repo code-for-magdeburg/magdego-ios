@@ -43,7 +43,7 @@ public class DepInfoManager : NSObject, CLLocationManagerDelegate {
     fileprivate func getDepartureTimes(forLocation : CLLocation) {
         let longitude = forLocation.coordinate.longitude
         let latitude = forLocation.coordinate.latitude
-        let apiURLString = "http://api.magdego.de/departure-time/location/\(longitude)/\(latitude)"
+        let apiURLString = "https://api.magdego.de/departure-time/location/\(longitude)/\(latitude)"
         let apiURL = URL(string: apiURLString)
         let urlSession = URLSession.shared
         
